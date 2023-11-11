@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Projects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      background-color: teal;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .heading {
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 20px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 30%;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .pro {
+      font-size: 20px;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: px;
+      padding: 14px 16px;
+    }
+
+    .nav-links a:hover:not(.active) {
+      background-color: lightseagreen;
+      border-color: black;
+    }
+
+    .nav-links li a.active {
+      background-color: #4caf50;
+      border-color: black;
+    }
+
+    /* Added */
+    .card-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-group {
+      width: 100%;
+      display: flex; /* Added display flex */
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      flex: 1; /* Added flex property */
+      margin: 20px;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-title {
+      color: teal;
+      font-weight: bold;
+    }
+
+    .card-text {
+      color: #333;
+      font-size: large;
+    }
+
+    .card-footer {
+      background-color: teal;
+      color: white;
+      text-align: right;
+    }
+    .done{
+        text-align: center; 
+        font-size: xx-large;
+        color: black;
+    }
+    .list{
+        font-size: large;
+    }
+    .custom-card {
+      display: flex;
+      align-items: center;
+      background-color: #e0f7fa; /* Change the background color */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-left: 25px;
+      margin-right: 25px;
+      font-size: large;
+    }
+
+    .custom-card img {
+      width: 500px;
+      height: 300px;
+      object-fit: fill;
+      border-radius: 10px;
+    }
+
+    .custom-card p {
+      margin: 0; /* Remove default margin */
+    }
+    .custom {
+            display: flex;
+            align-items: center;
+            background-color: #ffc107; /* Change the background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: large;
+        }
+
+        .custom img {
+            width: 1000px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-left: 100px; /* Change the margin to left */
+        }
+
+        .custom p {
+            margin: 0; /* Remove default margin */
+        }
+  </style>
+</head>
+
+<body>
+  <!-- Start of NavBar -->
+  <nav>
+    <div class="heading">
+      <h4>Portfolio</h4>
+    </div>
+    <ul class="nav-links">
+      <li><a class="" href="index.html">Home</a></li>
+      <li><a class="pro" href="projects.html">Projects</a></li>
+      <li><a href="#">Languages</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="mailto:2100031790cseh@gmail.com" class="hub">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- End of NavBar -->
+
+  <!-- Start of Home Page -->
+  <p class="done"><b>PROJECTS DONE BY ME</b></p>
+  <div class="list"style="">
+    <li>There are Some Projects which was done by Me.</li>
+    <br/>
+    <li>The Languages used in Each Project May vary due to various courses.</li><br/>
+    <li>The Languages that were mainly used to Implement any Kind of Front-End:
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>BootStrap</li>
+        <li>JavaScript</li>
+        <li>JSP</li>
+
+      </ul>
+    </li>
+    <li>The Languages that were mainly used to Implement any Kind of Back-End
+        <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+        </ul>
+    </li>
+
+
+  </div>
+  <div class="card-container">
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="img/bidding.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Bidding System</h5>
+          <p class="card-text">The Bidding System is an online platform where you can buy and sell products based upon bidding</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="img/event.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Event Management System</h5>
+          <p class="card-text">The Event Management System project aims to provide users with a platform to manage their Events and ideas.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="img/ecommerce.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Ecommerce Supply Chain Management System</h5>
+          <p class="card-text">
+            The Ecommerce Management System project aims to provide users with a platform where they can Buy Products Online at lowest prices.</p>  
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="custom-card">
+    <img src="img/bidding.png" alt="Description of the image">
+    <p>
+        <ul>
+            <li><b>Title Of the Project</b>:Bidding System</li><br/>
+            <li><b>Description:</b>The Bidding System is an online platform where you can buy and sell products based upon bidding</li><br/>
+            <li><b>Front-End Languages used:</b></li>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>BootStrap</li>
+            </ul>
+            <br/>
+            <li><b>Back-End Languages Used:</b></li>
+              <ul>
+                <li>Python</li>
+                <li>DJango</li>
+              </ul>
+              <br/>
+              <li><b>Want to Know More:</b><a href="https://www.linkedin.com/pulse/bidding-system-n-harsha-vardhan">Read From Here</a></li>
+        </ul>
+    </p>
+    <img class="card-img-top" src="https://www.qgiv.com/blog/wp-content/uploads/2019/07/Bids.png" alt="Card image cap"class="rev">
+  </div>
+<br/><br/>
+<div class="custom">
+  <p>
+      <ul>
+          <li><b>Title Of the Project</b>: Event Management System</li><br/>
+          <li><b>Description:</b> The Event Management System project aims to provide users with a platform to manage their Events and ideas.</li><br/>
+          <li><b>Front-End Languages used:</b></li>
+          <ul>
+              <li>JavaScript</li>
+              <li>BootStrap</li>
+          </ul>
+          <br/>
+          <li><b>Back-End Languages Used:</b></li>
+          <ul>
+              <li>React Js</li>
+              <li>Django</li>
+          </ul>
+          <br/>
+          <li><b>Want to Know More:</b><a href="https://www.linkedin.com/pulse/event-management-system-palanki-sai-umesh-adithya">Read From Here</a></li><br/>
+          <li><b>See the Output of the Project:</b><a href="gallery.html">Gallery</a></li>
+      </ul>
+  </p>
+  <img src="img/event.png" alt="Description of the image">
+</div>
+<br/><br/>
+<div class="custom-card">
+  <img src="img/ecommerce.png" alt="Description of the image">
+  <p>
+      <ul>
+          <li><b>Title Of the Project</b>:Ecommerce Supply Management System</li><br/>
+          <li><b>Description:</b>The Ecommerce Management System project aims to provide users with a platform where they can Buy Products Online at lowest prices.</li><br/>
+          <li><b>Front-End Languages used:</b></li>
+          <ul>
+              <li>JSP</li>
+              <li>CSS</li>
+              <li>BootStrap</li>
+          </ul>
+          <br/>
+          <li><b>Back-End Languages Used:</b></li>
+            <ul>
+              <li>Java</li>
+              <li>MySQL</li>
+            </ul>
+            <br/>
+            <li><b>Want to Know More:</b><a href="https://www.linkedin.com/pulse/e-commerce-supply-management-system-n-harsha-vardhan">Read From Here</a></li><br/>
+            <li><b>See the Output of the Project:</b><a href="ecgallery.html">Gallery</a></li><br/>
+            <li><b>Full Front-End Vedio :  </b><a href="https://youtu.be/ITRVqg7CyqM?si=XRPIPfbD_FwltW0S">Check Out here</a></li>
+      </ul>
+  </p>
+  
+  <img class="card-img-top" src="img/em1.png" alt="Card image cap"class="rev">
+  
+</div>
+<br/><br/>
+  <!-- End of Home Page -->
+</body>
+
+</html>
